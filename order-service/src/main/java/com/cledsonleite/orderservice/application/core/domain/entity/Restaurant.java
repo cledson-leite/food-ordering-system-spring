@@ -3,16 +3,15 @@ package com.cledsonleite.orderservice.application.core.domain.entity;
 import com.cledsonleite.orderservice.application.core.domain.valueObject.RestaurantId;
 
 import java.util.List;
+import java.util.UUID;
 
 public class Restaurant extends AggregateRoot<RestaurantId> {
 
     private List<Product> products;
     private boolean isActive;
 
-    public Restaurant(RestaurantId id, List<Product> products, boolean isActive) {
-        super(id);
-        this.products = products;
-        this.isActive = isActive;
+    public Restaurant() {
+        super(new RestaurantId(UUID.randomUUID()));
     }
 
     public List<Product> getProducts() {

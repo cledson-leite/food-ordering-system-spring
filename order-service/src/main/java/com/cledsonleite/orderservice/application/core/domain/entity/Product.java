@@ -4,13 +4,13 @@ import com.cledsonleite.orderservice.application.core.domain.valueObject.BaseId;
 import com.cledsonleite.orderservice.application.core.domain.valueObject.Money;
 import com.cledsonleite.orderservice.application.core.domain.valueObject.ProductId;
 
+import java.util.UUID;
+
 public class Product extends BaseId<ProductId> {
     private String name;
     private Money price;
-    protected Product(ProductId value, String name, Money price) {
-        super(value);
-        this.name = name;
-        this.price = price;
+    public Product() {
+        super(new ProductId(UUID.randomUUID()));
     }
     protected Product(ProductId value) {
         super(value);

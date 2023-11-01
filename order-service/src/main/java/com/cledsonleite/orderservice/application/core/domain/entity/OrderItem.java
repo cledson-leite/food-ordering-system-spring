@@ -5,6 +5,9 @@ import com.cledsonleite.orderservice.application.core.domain.valueObject.Money;
 import com.cledsonleite.orderservice.application.core.domain.valueObject.OrderId;
 import com.cledsonleite.orderservice.application.core.domain.valueObject.OrderItemId;
 
+import java.util.Random;
+import java.util.UUID;
+
 public class OrderItem extends BaseId<OrderItemId> {
     private  OrderId orderId;
     private  Product product;
@@ -12,8 +15,8 @@ public class OrderItem extends BaseId<OrderItemId> {
     private  Money price;
     private  Money subtotal;
 
-    public OrderItem(OrderItemId value) {
-        super(value);
+    public OrderItem() {
+        super(new OrderItemId(new Random().nextLong()));
     }
 
     public OrderId getOrderId() {
