@@ -3,13 +3,17 @@ package com.cledsonleite.orderservice.application.core.domain.valueObject;
 import java.util.Objects;
 
 public abstract class BaseId<T> {
-    private  final T value;
+    private T value;
 
     protected BaseId(T value) {
         this.value = value;
     }
-    public T getValue() {
+    public T getId() {
         return value;
+    }
+
+    public void setId(T value) {
+        this.value = value;
     }
 
     @Override
