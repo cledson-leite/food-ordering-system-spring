@@ -31,3 +31,13 @@ build/
 
 ### VS Code ###
 .vscode/
+
+/__consumer_offsets-*/
+/--schemas-*/
+/payment-re*/
+/restaurant-approval-re*/
+.lock
+*-offset-checkpoint
+meta.properties
+/version*/
+myid
