@@ -1,7 +1,6 @@
 package com.cledsonleite.orderservice.core.domain.entity;
 
 import com.cledsonleite.orderservice.core.domain.exception.OrderDomainException;
-import com.cledsonleite.orderservice.application.core.domain.valueObject.*;
 import com.cledsonleite.orderservice.core.domain.valueObject.*;
 
 import java.util.List;

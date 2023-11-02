@@ -32,7 +32,7 @@ public class OrderItemBuilder {
         return this;
     }
 
-    public OrderItemBuilder addProduct(BigDecimal value){
+    public OrderItemBuilder addPrice(BigDecimal value){
         Money price = new Money(value);
         item.setPrice(price);
         return this;

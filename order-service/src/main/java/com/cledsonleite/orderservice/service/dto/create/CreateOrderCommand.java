@@ -1,4 +1,4 @@
-package com.cledsonleite.orderservice.application.dto.create;
+package com.cledsonleite.orderservice.service.dto.create;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;

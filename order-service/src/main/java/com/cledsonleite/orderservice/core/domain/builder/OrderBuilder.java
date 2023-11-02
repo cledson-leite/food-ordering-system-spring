@@ -2,12 +2,10 @@ package com.cledsonleite.orderservice.core.domain.builder;
 
 import com.cledsonleite.orderservice.core.domain.entity.Order;
 import com.cledsonleite.orderservice.core.domain.entity.OrderItem;
-import com.cledsonleite.orderservice.application.core.domain.valueObject.*;
 import com.cledsonleite.orderservice.core.domain.valueObject.*;
 
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.UUID;
 
 public class OrderBuilder {
     private Order order;
@@ -17,20 +15,17 @@ public class OrderBuilder {
         return this;
     }
 
-    public OrderBuilder addCustomerId(){
-        CustomerId id = new CustomerId(UUID.randomUUID());
+    public OrderBuilder addCustomerId( CustomerId id){
         order.setCustomerId(id);
         return this;
     }
 
-    public OrderBuilder addRestaurantId(){
-        RestaurantId id = new RestaurantId(UUID.randomUUID());
+    public OrderBuilder addRestaurantId(RestaurantId id){
         order.setRestaurantId(id);
         return this;
     }
 
-    public OrderBuilder addTrackingId(){
-        TrackingId id = new TrackingId(UUID.randomUUID());
+    public OrderBuilder addTrackingId(TrackingId id){
         order.setTrackingId(id);
         return this;
     }
@@ -40,7 +35,7 @@ public class OrderBuilder {
         return this;
     }
 
-    public OrderBuilder addProduct(BigDecimal value){
+    public OrderBuilder addPrice(BigDecimal value){
         Money price = new Money(value);
         order.setPrice(price);
         return this;

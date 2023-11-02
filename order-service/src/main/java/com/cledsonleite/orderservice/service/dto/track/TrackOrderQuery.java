@@ -1,4 +1,4 @@
-package com.cledsonleite.orderservice.application.dto.track;
+package com.cledsonleite.orderservice.service.dto.track;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;

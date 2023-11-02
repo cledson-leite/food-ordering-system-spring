@@ -1,4 +1,4 @@
-package com.cledsonleite.orderservice.application.dto.message;
+package com.cledsonleite.orderservice.service.dto.message;
 
 import com.cledsonleite.orderservice.core.domain.valueObject.PaymentStatus;
 import lombok.AllArgsConstructor;
