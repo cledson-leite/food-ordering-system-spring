@@ -1,4 +1,4 @@
-package com.cledsonleite.orderservice.service.repository;
+package com.cledsonleite.orderservice.service.output.repository;
 
 import com.cledsonleite.orderservice.core.domain.entity.Order;
 import com.cledsonleite.orderservice.core.domain.valueObject.TrackingId;

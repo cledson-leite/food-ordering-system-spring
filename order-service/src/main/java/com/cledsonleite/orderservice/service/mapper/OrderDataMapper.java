@@ -13,6 +13,7 @@ import com.cledsonleite.orderservice.core.domain.valueObject.ProductId;
 import com.cledsonleite.orderservice.core.domain.valueObject.RestaurantId;
 import com.cledsonleite.orderservice.service.dto.create.CreateOrderCommand;
 import com.cledsonleite.orderservice.service.dto.create.CreateOrderResponse;
+import com.cledsonleite.orderservice.service.dto.track.TrackOrderResponse;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -76,6 +77,13 @@ public class OrderDataMapper {
                 .builder()
                 .trackingId(order.getTrackingId().getId())
                 .status(order.getStatus())
+                .build();
+    }
+    public TrackOrderResponse toTrackOrderResponse(Order order){
+        return TrackOrderResponse
+                .builder()
+                .trackingId(order.getTrackingId().getId())
+                .failureMessages(order.getFailureMessages())
                 .build();
     }
 }

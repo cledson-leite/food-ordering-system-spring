@@ -1,4 +1,4 @@
-package com.cledsonleite.orderservice.service.listener;
+package com.cledsonleite.orderservice.service.input.listener;
 
 import com.cledsonleite.orderservice.service.dto.message.RestaurantApprovalResponse;
 

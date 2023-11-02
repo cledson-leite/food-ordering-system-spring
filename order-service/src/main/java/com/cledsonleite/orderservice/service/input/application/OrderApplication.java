@@ -1,4 +1,4 @@
-package com.cledsonleite.orderservice.service;
+package com.cledsonleite.orderservice.service.input.application;
 
 import com.cledsonleite.orderservice.service.dto.create.CreateOrderCommand;
 import com.cledsonleite.orderservice.service.dto.create.CreateOrderResponse;
@@ -12,7 +12,7 @@ import org.springframework.validation.annotation.Validated;
 @Slf4j
 @Validated
 @Service
-public class OrderService implements IOrderService {
+public class OrderApplication implements IOrderApplication {
     @Autowired
     private OrderCreateCommandHandler orderCreate;
 
